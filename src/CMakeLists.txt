@@ -245,7 +245,7 @@ if(ENABLE_ASIO_LIB)
     asio_client_tls_context.cc
   )
 
-  add_library(nghttp2_asio SHARED
+  add_library(nghttp2_asio STATIC
      ${NGHTTP2_ASIO_SOURCES}
      $<TARGET_OBJECTS:llhttp>
      $<TARGET_OBJECTS:url-parser>

@@ -26,6 +26,7 @@
 #define ALLOCATOR_H
 
 #include "nghttp2_config.h"
+#include <nghttp2/nghttp2.h>
 
 #ifndef _WIN32
 #  include <sys/uio.h>

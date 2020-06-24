@@ -52,6 +52,12 @@ extern "C" {
 #include <sys/types.h>
 #include <stdarg.h>
 
+/* Fix PR open in nghttp2 lib for windows.
+   This is temporary fix */
+#ifdef _WIN32
+#   define ssize_t int
+#endif
+
 #include <nghttp2/nghttp2ver.h>
 
 #ifdef NGHTTP2_STATICLIB
