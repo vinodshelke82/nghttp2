@@ -49,7 +49,7 @@ if [ ! -d "$PREFIXDIR" ]; then
 fi
 
 LDFLAGS=-L/usr/gcc_4_9/lib64 CXXFLAGS="-std=c++14" CXX=/usr/gcc_4_9/bin/g++ LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/gcc_7_2/lib64:$BOOST_ROOT/stage/lib \
-./configure --enable-asio-lib --prefix=$PREFIXDIR &&\
+./configure --prefix=$PREFIXDIR &&\
 
 CXXFLAGS="-std=c++14" CXX=/usr/gcc_4_9/bin/g++ LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/gcc_7_2/lib64 make -j 4 &&\
 make install
