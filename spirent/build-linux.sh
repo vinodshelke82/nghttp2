@@ -24,8 +24,8 @@ if [ ! -d "$PREFIXDIR" ]; then
   mkdir $PREFIXDIR
 fi
 
-LDFLAGS=-L/usr/gcc_4_9/lib64 CC=/usr/gcc_4_9/bin/gcc LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/gcc_7_2/lib64  \
+LDFLAGS=-L/usr/gcc_4_9/lib64 CC=/usr/gcc_4_9/bin/gcc LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/gcc_7_2/lib  \
 ./configure --prefix=$PREFIXDIR &&\
 
-CC=/usr/gcc_4_9/bin/gcc LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/gcc_7_2/lib64 make -j 4 &&\
+CC=/usr/gcc_4_9/bin/gcc LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/gcc_7_2/lib make -j 4 &&\
 make install

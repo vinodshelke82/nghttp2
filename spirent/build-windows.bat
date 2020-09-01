@@ -6,9 +6,6 @@ REM NOTICE: Follow instructions and change a few variables below before building
 REM Change STC_ROOT to the STC build root folder.
 set STC_ROOT=%STC_BUILD_ROOT%
 @echo %STC_ROOT%
-IF "%STC_ROOT%" == "" (
-  set STC_ROOT=D:\table\blds\bandrews\bld
-)
 
 pushd C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools
 call VsDevCmd.bat -arch=x64
